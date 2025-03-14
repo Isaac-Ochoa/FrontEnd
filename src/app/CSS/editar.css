@@ -1,0 +1,63 @@
+.bg-elegant-gradient {
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec, #bcccdc);
+}
+
+.text-elegant {
+    color: #334e68;
+}
+
+.button-elegant {
+    background: linear-gradient(to right, #90cdf4, #63b3ed);
+    color: #1a202c;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-elegant:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-elegant-danger {
+    background: linear-gradient(to right, #fc8181, #f56565);
+    color: #1a202c;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-elegant-danger:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-elegant {
+    border: 1px solid #cbd5e0;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-elegant:focus {
+    border-color: #63b3ed;
+    box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.5);
+}
+
+.select-elegant {
+    border: 1px solid #cbd5e0;
+    border-radius: 0.75rem;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.select-elegant:focus {
+    border-color: #63b3ed;
+    box-shadow: 0 0 0 3px rgba(99, 179, 237, 0.5);
+}

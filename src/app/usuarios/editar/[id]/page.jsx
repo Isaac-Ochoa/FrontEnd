@@ -2,10 +2,11 @@
 import { useState, useEffect } from "react";
 import { useRouter, useParams } from "next/navigation";
 import { actualizar, usuarios } from "@/conexionApi/peticiones";
+import "../../../CSS/editar.css";
 
 export default function EditarUsuario() {
     const router = useRouter();
-    const { id } = router.query; // Cambié esto de useParams a router.query ya que estás usando Next.js
+    const { id } = useParams();
     const [usuario, setUsuario] = useState({
         username: "",
         email: "",
@@ -43,10 +44,10 @@ export default function EditarUsuario() {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-6">
+        <div className="flex flex-col items-center justify-center min-h-screen bg-elegant-gradient p-6">
             <div className="bg-white p-8 rounded-xl shadow-xl w-full max-w-lg transform transition duration-500 hover:scale-105">
-                <h1 className="text-3xl font-extrabold text-gray-800 mb-6 text-center animate__animated animate__fadeIn">
-                    Editar Usuario
+                <h1 className="text-3xl font-extrabold text-elegant mb-6 text-center animate__animated animate__fadeIn">
+                    🚀 Editar Usuario
                 </h1>
                 <form onSubmit={handleSubmit} className="flex flex-col">
                     <input
@@ -56,7 +57,7 @@ export default function EditarUsuario() {
                         onChange={handleChange}
                         required
                         placeholder="Nombre de usuario"
-                        className="border border-gray-300 rounded-lg p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 ease-in-out"
+                        className="input-elegant"
                     />
                     <input
                         type="email"
@@ -65,23 +66,23 @@ export default function EditarUsuario() {
                         onChange={handleChange}
                         required
                         placeholder="Correo electrónico"
-                        className="border border-gray-300 rounded-lg p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 ease-in-out"
+                        className="input-elegant"
                     />
                     <select 
                         name="tipoUsuario" 
                         value={usuario.tipoUsuario} 
                         onChange={handleChange} 
                         required 
-                        className="border border-gray-300 rounded-lg p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-200 ease-in-out"
+                        className="select-elegant"
                     >
                         <option value="admin">Admin</option>
                         <option value="usuario">Usuario</option>
                     </select>
                     <button 
                         type="submit" 
-                        className="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-2 px-6 rounded-lg hover:bg-blue-700 transform transition duration-300 ease-in-out shadow-lg hover:scale-105"
+                        className="button-elegant"
                     >
-                        Actualizar
+                        🚀 Actualizar
                     </button>
                 </form>
             </div>

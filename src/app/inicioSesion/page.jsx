@@ -14,7 +14,7 @@ export default function Login() {
         <div className="flex justify-center items-center min-h-screen bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
             <div className="bg-white p-8 rounded-xl shadow-xl w-96 transform transition duration-500 hover:scale-105">
                 <h1 className="text-3xl font-extrabold text-center text-gray-800 mb-6 animate__animated animate__fadeIn">
-                    Iniciar Sesión
+                🚀 Iniciar Sesión
                 </h1>
                 
                 <form 
@@ -27,7 +27,7 @@ export default function Login() {
                         } else if (respuesta.tipoUsuario === "admin") {
                             router.push("/administradores");
                         } else {
-                            setMensaje("Datos incorrectos, intenta de nuevo.");
+                            setMensaje("Datos incorrectos");
                             toast.error("Usuario o contraseña incorrectos");
                             reset();
                             setTimeout(() => setFocus("username"), 100);
@@ -52,7 +52,7 @@ export default function Login() {
                         type="submit" 
                         className="bg-gradient-to-r from-blue-500 to-blue-700 text-white py-2 rounded-lg hover:bg-blue-700 transition duration-300 ease-in-out shadow-lg transform hover:scale-105"
                     >
-                        Ingresar
+                        🚀 Ingresar
                     </button>
                 </form>
                 

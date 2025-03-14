@@ -1,0 +1,88 @@
+.bg-elegant-gradient {
+    background: linear-gradient(to right, #f0f4f8, #d9e2ec, #bcccdc);
+}
+
+.text-elegant {
+    color: #334e68;
+}
+
+.button-elegant {
+    background: linear-gradient(to right, #90cdf4, #63b3ed);
+    color: #1a202c;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease;
+    width: 100%;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-elegant:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.button-elegant-danger {
+    background: linear-gradient(to right, #fc8181, #f56565);
+    color: #1a202c;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease;
+    width: 100%;
+    margin-top: 0.75rem;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button-elegant-danger:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-header {
+    background: #e2e8f0;
+    border-bottom: 2px solid #cbd5e0;
+    text-align: left;
+    padding: 0.75rem;
+}
+
+.table-row {
+    border-bottom: 1px solid #cbd5e0;
+}
+
+.table-row:hover {
+    background: #edf2f7;
+    transition: background 0.3s ease;
+}
+
+.table-cell {
+    border: 1px solid #cbd5e0;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+.button-delete {
+    background: #fc8181;
+    color: #1a202c;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease;
+    margin: 0.25rem;
+}
+
+.button-delete:hover {
+    background: #f56565;
+}
+
+.button-update {
+    background: #90cdf4;
+    color: #1a202c;
+    padding: 0.25rem 0.75rem;
+    border-radius: 0.5rem;
+    transition: background 0.3s ease;
+    margin: 0.25rem;
+}
+
+.button-update:hover {
+    background: #63b3ed;
+}
